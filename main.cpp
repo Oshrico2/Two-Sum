@@ -53,20 +53,20 @@ int main() {
     //solve in O(nlogn):
 
     //sorting array using quick sort.
-//    quickSort(arr,0,n-1);
-//    checktwosum(arr,n,target);
+    quickSort(arr,0,n-1);
+    checktwosum(arr,n,target);
 //
 
-    //solve in O(n^2):
-    for(int i=0;i<n;i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (arr[i] + arr[j] == target) {
-                cout << "the indices:" << endl << "[" << i << "," << j << "]" << endl;
-                return 0;
-            }
-        }
-    }
-        cout<<"dosent found two sum"<<endl;
+//     //solve in O(n^2):
+//     for(int i=0;i<n;i++) {
+//         for (int j = i + 1; j < n; j++) {
+//             if (arr[i] + arr[j] == target) {
+//                 cout << "the indices:" << endl << "[" << i << "," << j << "]" << endl;
+//                 return 0;
+//             }
+//         }
+//     }
+//         cout<<"dosent found two sum"<<endl;
 
 
     return 0;
